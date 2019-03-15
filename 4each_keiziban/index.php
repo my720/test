@@ -114,30 +114,53 @@
         
         </div>
         
-        <div class="box2">
-          <h3>タイトル</h3>
-          
-          <div class="box2_container">
-          
-            記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身
-          </div>
-          
-          <div class='handlename'>posted by 通りすがり</div>
-          
-        </div>
+        <?php
         
-        <div class="box3">
+        while($row = $stmt->fetch()){
+          
         
-        <h3>タイトル</h3>
-          
-        <div class="box3_container">
-          
-            記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身記事の中身
-        </div>
-          
-        <div class='handlename'>posted by 通りすがり</div>
         
-</div>
+        echo "<div class='box2'>";
+        
+        echo "<h3>".$row['title']."</h3>";
+          
+        echo "<div class='box2_container'>";
+          
+        echo $row['comments'];
+          
+        echo "<div class='handlename'>posted by ".$row['handlename']."</div>";
+          
+        echo "</div>";
+        
+        echo "</div>";
+          
+        }
+        
+        ?>
+        
+        <?php
+        
+        while($row = $stmt->fetch()){
+          
+        
+        
+        echo "<div class='box3'>";
+        
+        echo "<h3>".$row['title']."</h3>";
+          
+        echo "<div class='box3_container'>";
+          
+        echo $row['comments'];
+          
+        echo "<div class='handlename'>posted by ".$row['handlename']."</div>";
+          
+        echo "</div>";
+        
+        echo "</div>";
+          
+        }
+        
+        ?>
        
        </div>
        <div class="right">

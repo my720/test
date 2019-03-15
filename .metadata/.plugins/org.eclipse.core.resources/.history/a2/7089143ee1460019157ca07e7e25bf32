@@ -1,0 +1,12 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+
+	string abc = 山田"";
+
+		System.out.println(abc + "さん");
+
+	}
+
+}
