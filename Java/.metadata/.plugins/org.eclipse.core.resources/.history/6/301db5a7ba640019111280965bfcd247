@@ -1,0 +1,10 @@
+package com.internousdev.login2.dao;
+
+import com.internousdev.login2.dto.LoginDTO;
+
+public class LoginDAO {
+	public LoginDTO select(String name,String password){
+		LoginDTO dto=new LoginDTO();
+
+	}
+}

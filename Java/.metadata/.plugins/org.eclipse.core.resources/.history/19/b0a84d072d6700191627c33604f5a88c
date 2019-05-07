@@ -1,0 +1,10 @@
+package com.internousdev.ecsite.dao;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class ItemListDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Conneciton connection=dbConnector.getConnection();
+	private ArrayList<ItemListDTO> itemList=new ArrayList<ItemListDTO>();
+
+}

@@ -1,0 +1,7 @@
+package com.internousdev.ecsite3.dao;
+
+
+
+public class LoginDAO {
+	private DBConnector dbConnector=new DBConnector();
+}

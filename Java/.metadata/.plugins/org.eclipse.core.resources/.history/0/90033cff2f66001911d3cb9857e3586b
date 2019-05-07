@@ -1,0 +1,11 @@
+package com.internousdev.ecsite3.dao;
+
+import com.internousdev.ecsite3.util.DBConnector;
+import java.sql.*;
+
+public class UserCreateCompleteDAO {
+	DBConnector dbConnector=new DBConnector();
+	Connection connection=dbConnection.getConnection;
+	DateUtil dateUtil=new DateUtil();
+
+}

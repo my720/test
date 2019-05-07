@@ -1,0 +1,9 @@
+package com.internousdev.ecsite3.dao;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class MyPageDAO extends ActionSupport implements SessionAware{
+
+}

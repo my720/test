@@ -1,0 +1,11 @@
+package com.internousdev.ecsite3.dao;
+
+import com.internousdev.ecsite3.dto.BuyItemDTO;
+import com.internousdev.ecsite3.util.DBConnector;
+
+public class BuyItemDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connectio=dbConnector.getConnection();
+	BuyItemDTO buyItemDTO=new BuyItemDTO();
+
+}

@@ -1,0 +1,23 @@
+package com.internousdev.ecsite.action;
+
+import java.sql.SQLException;
+
+import com.internousdev.ecsite.dao.ItemListDAO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemListAction extends ActionSupport{
+	private String itemName;
+	private String itemPrice;
+	private String itemStock;
+	private ItemListDTO dto=new ItemListDTO();
+	private ItemListDAO dao=new ItemListDAO();
+	private String deleteFlg;
+	private String errorMessage;
+
+	public String execute()throws SQLException{
+		return SUCCESS;
+		if(deleteFlg == null){
+
+		}
+	}
+}

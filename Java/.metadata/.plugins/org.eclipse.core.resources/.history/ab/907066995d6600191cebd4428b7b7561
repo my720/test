@@ -1,0 +1,23 @@
+package com.internousdev.ecsite.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class ItemCreateCompleteDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private String sql="insert into item_info_transaction(item_name,item_price,item_stock)values(?,?,?)";
+	public void CreateItem(String item1,String item2,String item3)throws SQLException{
+		try{
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			preparedStatement.setString(1,item1);
+			preparedStatement.setString(2,item2);
+			preparedStatement.setString(3, item3);
+			preparedStatement.execute();
+
+		}
+	}
+}

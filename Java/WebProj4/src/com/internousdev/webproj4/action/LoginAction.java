@@ -10,18 +10,21 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport{
 	private String username;
 	private String password;
-	private List<LoginDTO> LoginDTOList=new ArrayList<LoginDTO>();
+	private List<LoginDTO> LoginDTOList=new ArrayList <LoginDTO>();
+
 	public String execute(){
 		String ret=ERROR;
 		System.out.println(username);
-		System.err.println(password);
+		System.out.println(password);
 		LoginDAO dao=new LoginDAO();
+
 		LoginDTOList=dao.select(username, password);
-		if(this.username.equals(LoginDTOList.get(0).getUsername()) && this.password.equals(LoginDTOList.get(0).getPassword())){
-			ret=SUCCESS;
-		}else{
-			ret=ERROR;
-		}
+		if(this.username.equals(LoginDTOList.get(0).getUsername()) &&
+				this.password.equals(LoginDTOList.get(0).getPassword())){
+					ret =SUCCESS;
+				}else{
+					ret = ERROR;
+				}
 		return ret;
 	}
 	public String getUsername(){
@@ -40,6 +43,6 @@ public class LoginAction extends ActionSupport{
 		return LoginDTOList;
 	}
 	public void setLoginDTOList(List<LoginDTO> loginDTOList){
-		LoginDTOList = loginDTOList;
+		LoginDTOList=loginDTOList;
 	}
 }

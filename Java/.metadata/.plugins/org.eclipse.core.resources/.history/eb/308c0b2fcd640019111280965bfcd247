@@ -1,0 +1,6 @@
+
+
+public class ListPractice {
+	List<Person> personList=new ArrayList<Person>();
+
+	}

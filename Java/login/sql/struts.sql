@@ -1,6 +1,6 @@
 set names utf8;
-set foreign_key_checks = 0;
-drop database if exists logindb mizusawa;
+set foreign_key_checks=0;
+drop database if exists logindb_mizusawa;
 create database logindb_mizusawa;
 use logindb_mizusawa;
 

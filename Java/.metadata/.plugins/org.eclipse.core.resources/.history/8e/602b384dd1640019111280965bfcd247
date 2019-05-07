@@ -1,0 +1,11 @@
+
+
+public class ListPractice {
+	public static void main(String[]args){
+
+		Person sato=new Person();
+		sato.name="sato";
+		sato.age=28;
+		System.out.println(sato.name+"は"+sato.age+"才");
+	}
+}

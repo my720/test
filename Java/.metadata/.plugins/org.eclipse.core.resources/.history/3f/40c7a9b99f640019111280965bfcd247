@@ -1,0 +1,16 @@
+package com.internousdev.login1.dao;
+
+import java.sql.SQLException;
+import java.sql.Connection;
+
+import com.internousdev.login1.dto.LoginDTO;
+import com.internousdev.login1.util.DBConnector;
+
+public class LoginDAO {
+	public String select(String name,String password)throws SQLException{
+		LoginDTO dto=new LoginDTO();
+		DBConnector db=new DBConnector();
+		Connection con=db.getConnection();
+
+	}
+}

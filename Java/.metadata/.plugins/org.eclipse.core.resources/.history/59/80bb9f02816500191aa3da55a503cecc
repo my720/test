@@ -1,0 +1,7 @@
+package com.internousdev.ecsite3.action;
+
+
+
+public class HomeAction extends ActionSupport implements SessionAweare{
+
+}

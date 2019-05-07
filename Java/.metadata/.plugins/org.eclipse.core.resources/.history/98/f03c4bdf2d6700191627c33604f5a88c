@@ -1,0 +1,22 @@
+package com.internousdev.ecsite.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.ItemListDTO;
+import com.internousdev.ecsite.util.DBConnector;
+
+public class ItemListDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private ArrayList<ItemListDTO> itemList=new ArrayList<ItemListDTO>();
+
+	public ItemListDTO itemListInfo()throws SQLException{
+		String sql="select item_name,item_price,item_stock from item_info_transaction";
+		try{
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+
+		}
+	}
+}

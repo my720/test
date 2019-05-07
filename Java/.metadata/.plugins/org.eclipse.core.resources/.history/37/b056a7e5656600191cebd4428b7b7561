@@ -1,0 +1,26 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite.dao.ItemCreateCompleteDAO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
+	private String item1;
+	private String item2;
+	private String item3;
+	public Map<String,Object> session;
+	private ItemCreateCompleteDAO itemCreateCompleteDAO=new ItemCreateCompleteDAO();
+
+	public String execute()throws SQLException{
+		itemCreateCompleteDAO.CreateItem(
+				session.get(item1).toString(),
+				session.get(item2).toString(),
+				session.get(item3).toString());
+		String result=SUCCESS;
+
+		return result;
+	}
+}

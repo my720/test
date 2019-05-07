@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;login/sql/logindb_mizusawa.sql&apos; を &apos;struts.sql&apos; に変更します" description="リソース &apos;logindb_mizusawa.sql&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sql/logindb_mizusawa.sql" name="struts.sql" stamp="1555662050433" updateReferences="true"/>
+</session>

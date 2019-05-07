@@ -1,0 +1,7 @@
+package com.internousdev.ecsite.dao;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class ItemListDAO {
+	DBConnector dbConnector=new DBConnector();
+}

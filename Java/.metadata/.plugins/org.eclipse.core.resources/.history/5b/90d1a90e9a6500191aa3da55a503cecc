@@ -1,0 +1,9 @@
+package com.internousdev.ecsite3.util;
+
+
+public class DateUtil {
+	public String getDate(){
+		Date date=new Date();
+
+	}
+}

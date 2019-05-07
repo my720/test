@@ -1,0 +1,9 @@
+
+
+
+public class MapPractice {
+	public static void main(String[]args){
+		Map<String,Person> personMap=new HashMap<String,Person>();
+
+	}
+}

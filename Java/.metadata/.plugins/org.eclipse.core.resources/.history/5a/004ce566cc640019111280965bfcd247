@@ -1,0 +1,4 @@
+
+public class ListPractice {
+	public List<Person> personList=newArrayList<Person>(String name,int age);
+	}
