@@ -1,0 +1,19 @@
+package util;
+
+import java.sql.DriverManager;
+
+public class DBConnector {
+	private static String dirverName="com.mysql.jdbc.Driver";
+	private static String url="jdbc:mysql://localhost/team";
+	private static String user="root";
+	private static String password="mysql";
+
+	public Connection getConnection(){
+		Connection con=null;
+		try{
+			Class.forName(dirverName);
+			con=(Conneciton)DriverManager.getConnection(url,user,password);
+
+		}
+	}
+}

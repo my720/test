@@ -1,8 +1,0 @@
-package com.internousdev.ecsite.dao;
-
-import com.internousdev.ecsite.util.DBConnector;
-
-public class ItemCreateCompleteDAO {
-	DBConnector dbConnector=new DBConnector();
-
-}

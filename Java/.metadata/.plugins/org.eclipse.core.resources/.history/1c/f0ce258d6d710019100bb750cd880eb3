@@ -1,0 +1,35 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import dto.ProductInfoDTO;
+import util.DBConnector;
+
+public class ProductInfoDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private ProductInfoDTO dto=new ProductInfoDTO();
+
+	public ProductInfoDTO getProductInfo()throws SQLException{
+		String sql="SELECT * FROM product_info";
+		try{
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			ResultSet resultSet=preparedStatement.executeQuery();
+			if(resultSet.next()){
+				dto.setProductName(resultSet.getString("product_name"));
+				dto.setProductName_kana(resultSet.getString("product_name_kana"));
+				dto.setImagePath(resultSet.getString("image_file_path"));
+				dto.setImageFileName(resultSet.getString("image_file_name"));
+				dto.setPrice(resultSet.getString("price"));
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+		return dto;
+	}
+}

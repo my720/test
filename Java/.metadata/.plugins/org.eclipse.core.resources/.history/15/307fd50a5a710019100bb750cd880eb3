@@ -1,0 +1,17 @@
+package action;
+
+import dao.ProductInfoDAO;
+import dto.ProductInfoDTO;
+
+public class ProductListAction//extends ActionSupport implements SessionAware
+{
+	private String prductName;
+	private String productName_kana;
+	private String imageFilePath;
+	private String imageFileName;
+	private String Price;
+	private ProductInfoDTO productInfoDTO=new ProductInfoDTO();
+	private ProductInfoDAO dao=new ProductInfoDAO();
+	public Map<String,Object> session;
+
+}

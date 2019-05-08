@@ -1,9 +1,0 @@
-package com.internousdev.ecsite.dao;
-
-import com.internousdev.ecsite.util.DBConnector;
-import java.sql.*;
-
-public class ItemListDeleteCompleteDAO {
-	DBConnector dbConnector=new DBConnector();
-	Connection connection=dbConnector.getConnection();
-}

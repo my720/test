@@ -1,9 +1,0 @@
-package com.internousdev.ecsite3.dao;
-
-import com.internousdev.ecsite3.util.DBConnector;
-import java.sql.*;
-
-public class MyPageDAO {
-	DBConnector dbConnector=new DBConnector();
-	Connection connection=dbConnection.getConnection();
-}

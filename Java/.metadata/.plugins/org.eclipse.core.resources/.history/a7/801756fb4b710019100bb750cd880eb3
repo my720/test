@@ -1,0 +1,9 @@
+package dao;
+
+public class ProductInfoDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private ProductInfoDTO productInfoDTO=new ProductIndoDTO();
+
+	public Product
+}

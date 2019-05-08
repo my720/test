@@ -1,0 +1,24 @@
+package action;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import dao.ProductInfoDAO;
+import dto.ProductInfoDTO;
+
+public class ProductListAction//extends ActionSupport implements SessionAware
+{
+	private String prductName;
+	private String productName_kana;
+	private String imageFilePath;
+	private String imageFileName;
+	private String Price;
+	private String errorMessage;
+	private ProductInfoDTO productInfoDTO=new ProductInfoDTO();
+	private ProductInfoDAO dao=new ProductInfoDAO();
+	public Map<String,Object> session;
+
+	public String execute()throws SQLException{
+
+	}
+}

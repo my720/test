@@ -1,0 +1,9 @@
+package dto;
+
+public class ProductInfoDTO {
+	private String productName;
+	private String productName_kana;
+	private String productImage;
+	private String productPrice;
+
+}

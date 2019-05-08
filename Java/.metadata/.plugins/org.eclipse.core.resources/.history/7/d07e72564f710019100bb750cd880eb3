@@ -1,0 +1,40 @@
+package dto;
+
+public class ProductInfoDTO {
+	private String productName;
+	private String productName_kana;
+	private String imageFilePath;
+	private String imageFileName;
+	private String productPrice;
+
+	public String getProductName(){
+		return productName;
+	}
+	public void setProductName(String productName){
+		this.productName=productName;
+	}
+	public String getProductName_kana(){
+		return productName_kana;
+	}
+	public void setProductName_kana(String productName_kana){
+		this.productName=productName_kana;
+	}
+	public String getImageFilePath(){
+		return imageFilePath;
+	}
+	public void setImagePath(String imageFilePath){
+		this.imageFilePath=imageFilePath;
+	}
+	public String getImageFileName(){
+		return imageFileName;
+	}
+	public void setImageFileName(String imageFileName){
+		this.imageFileName=imageFileName;
+	}
+	public String getProductPrice(){
+		return productPrice;
+	}
+	public void setProductPrice(String productPrice){
+		this.productPrice=productPrice;
+	}
+}

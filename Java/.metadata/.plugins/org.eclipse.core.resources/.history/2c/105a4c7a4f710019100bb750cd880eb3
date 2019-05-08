@@ -1,0 +1,17 @@
+package dao;
+
+import java.sql.Connection;
+
+public class ProductInfoDAO {
+	private DBConnector dbConnector=new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private ProductInfoDTO productInfoDTO=new ProductIndoDTO();
+
+	public ProductInfoDTO getProductInfo(){
+		String sql="SELECT * FROM product_info";
+		try{
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+
+		}
+	}
+}
